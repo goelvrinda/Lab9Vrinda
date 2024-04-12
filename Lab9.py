@@ -12,6 +12,14 @@ def encode(password):
     return encode_pass
 
 
+def decode(password):
+    decoded_pass = ''
+    for i in password:
+        decoded_num = str(int(i) - 3)
+        decoded_pass += decoded_num
+    return decoded_pass
+
+
 def main():
     while True:
         menu()
